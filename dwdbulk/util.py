@@ -108,7 +108,7 @@ def y2k_date_parser(col, date_format="%Y%m%d%H%M"):
     y2k = pd.Timestamp("2000-01-01")
 
     col_raw = pd.to_datetime(col, format=date_format)
-    col_raw = col_raw.to_series(keep_tz=True).reset_index(drop=True)
+    col_raw = col_raw.to_series().reset_index(drop=True)
 
     pre_y2k_bool = col_raw < y2k
 

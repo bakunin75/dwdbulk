@@ -23,7 +23,7 @@ VERSION = "0.1.0"
 # What packages are required for this module to be executed?
 REQUIRED = [
     "requests>=2.22,<2.23",
-    "pandas>=0.25,<0.26",
+    "pandas>=0.25",
     "lxml>=4.4,<4.5",
     "numpy>=1.17",
 ]
